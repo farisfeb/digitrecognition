@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="733.0" stylesheets="@MetroWhite.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Detail">
+   <children>
+      <TableView fx:id="detail" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="iterasi" prefWidth="70.0" text="Iterasi" />
+          <TableColumn fx:id="learnRate" prefWidth="101.0" text="LearnRate" />
+            <TableColumn fx:id="d0" prefWidth="50.0" text="d0" />
+            <TableColumn fx:id="d1" prefWidth="50.0" text="d1" />
+            <TableColumn fx:id="d2" prefWidth="50.0" text="d2" />
+            <TableColumn fx:id="d3" prefWidth="50.0" text="d3" />
+            <TableColumn fx:id="d4" prefWidth="50.0" text="d4" />
+            <TableColumn fx:id="d5" prefWidth="50.0" text="d5" />
+            <TableColumn fx:id="d6" prefWidth="50.0" text="d6" />
+            <TableColumn fx:id="d7" prefWidth="50.0" text="d7" />
+            <TableColumn fx:id="d8" prefWidth="50.0" text="d8" />
+            <TableColumn fx:id="d9" prefWidth="50.0" text="d9" />
+            <TableColumn fx:id="hasil" prefWidth="100.0" text="Hasil" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

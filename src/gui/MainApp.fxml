@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="558.0" stylesheets="@MetroWhite.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainApp">
+   <children>
+      <Button layoutX="25.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleBrowse" styleClass="defa" text="Browse" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="20.0" />
+      <TextField fx:id="imagePath" disable="true" editable="false" layoutX="136.0" layoutY="20.0" prefHeight="37.0" prefWidth="268.0" promptText="filename" AnchorPane.leftAnchor="136.0" AnchorPane.topAnchor="20.0" />
+      <Label layoutX="25.0" layoutY="71.0" text="Learning Rate" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="70.0" />
+      <TextField fx:id="learningRate" layoutX="136.0" layoutY="65.0" prefHeight="37.0" prefWidth="45.0" text="0.8" AnchorPane.leftAnchor="136.0" AnchorPane.topAnchor="65.0" />
+      <Label layoutX="25.0" layoutY="114.0" text="Epoch" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="110.0" />
+      <Slider fx:id="epoch" layoutX="136.0" layoutY="114.0" majorTickUnit="50.0" max="300.0" minorTickCount="4" prefHeight="38.0" prefWidth="268.0" showTickLabels="true" showTickMarks="true" value="100.0" AnchorPane.leftAnchor="136.0" AnchorPane.topAnchor="114.0" />
+      <Button defaultButton="true" layoutX="229.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleProses" prefHeight="33.0" prefWidth="142.0" styleClass="defa" text="PROSES" AnchorPane.leftAnchor="229.0" AnchorPane.topAnchor="170.0" />
+      <Label layoutX="142.0" layoutY="215.0" text="Program Mengenali Angka Sebagai" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="215.0" />
+      <Label fx:id="hasil" layoutX="404.0" layoutY="215.0" text="..." AnchorPane.leftAnchor="404.0" AnchorPane.topAnchor="215.0" />
+      <Hyperlink layoutX="463.0" layoutY="216.0" onAction="#handleDetail" text="Details" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="216.0" />
+      <ImageView fx:id="imageView" fitHeight="130.0" fitWidth="100.0" layoutX="437.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="435.0" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>
