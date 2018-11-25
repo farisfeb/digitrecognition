@@ -79,7 +79,7 @@ public class MainApp extends Application {
             try {
                 main = new DigitRecognition(selectedFile.getAbsolutePath());
             }catch (IOException ex){
-                Logger.getLogger(TestGUI.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(MainApp.class.getName()).log(Level.SEVERE, null, ex);
             }
 
             //proses utama
